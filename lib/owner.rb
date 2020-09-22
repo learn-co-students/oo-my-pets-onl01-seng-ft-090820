@@ -51,7 +51,7 @@ class Owner
   end
 
   def sell_pets
-    # binding.pry
+    binding.pry
     dogs.each {|dog| dog.mood = "nervous"}
     dogs.each {|dog| dog.owner = nil}
     dogs.clear
