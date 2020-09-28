@@ -53,7 +53,7 @@ class Owner
   end
 
   def feed_fish
-    pets[:fishes].each do |fish|
+    pets[:fish].each do |fish|
       fish.mood = "happy"
     end
   end
@@ -68,6 +68,6 @@ class Owner
   end
 
   def list_pets
-    "I have #{pets[:foxes].count} fox(es), #{pets[:dogs].count} dog(s), and #{pets[:cats].count} cat(s)."
+    "I have #{pets[:fish].count} fish, #{pets[:dogs].count} dog(s), and #{pets[:cats].count} cat(s)."
   end
 end
