@@ -31,31 +31,31 @@ class Owner
   end
 
   def buy_fish(fish_name)
-    pets[:fish] << Fish.new(fish_name)
+    @pets[:fish] << Fish.new(fish_name)
   end
 
   def buy_cat(cat_name)
-    pets[:cats] << Cat.new(cat_name)
+    @pets[:cats] << Cat.new(cat_name)
   end
 
   def buy_dog(dog_name)
-    pets[:dogs] << Dog.new(dog_name)
+    @pets[:dogs] << Dog.new(dog_name)
   end
 
   def walk_dogs
-    pets[:dogs].each do |dog|
+    @pets[:dogs].each do |dog|
       dog.mood = "happy"
     end
   end
 
   def play_with_cats
-    pets[:cats].each do |cat|
+    @pets[:cats].each do |cat|
       cat.mood = "happy"
     end
   end
 
   def feed_fish
-    pets[:fish].each do |fish|
+    @pets[:fish].each do |fish|
       fish.mood = "happy"
     end
   end
