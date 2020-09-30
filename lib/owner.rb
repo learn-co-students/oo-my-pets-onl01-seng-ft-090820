@@ -2,7 +2,7 @@ class Owner
   attr_accessor :cats, :dogs
   attr_reader :species, :name
 
- @@all = []
+@@all = []
 @@pets = {:fishes => [], :dogs => [], :cats => []}
 
    def initialize(species)
@@ -60,8 +60,8 @@ class Owner
   def sell_pets
     @pets.each do |species, animals|
       animals.each do |animal|
-        animal.mood = "nervous"
-        end
+      animal.mood = "nervous"
+      end
       animals.clear
     end
   end
